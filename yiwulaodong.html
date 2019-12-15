@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="./images/favicon.ico" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
+<title>杨友-个人网页-阿优乐扬</title>
+</head>
+<body>
+<div class="wapper_box">
+<div class="header_box"></div>
+<div class="header_box1">
+  <div class="header_box2">
+    <a class="logo_box" href="index.html"><img src="images/logo.png"/></a>
+    <ul class="nav_box">
+        <li class="nav_1"><a class="nav_but" href="index.html">网站首页</a></li>
+        <li class="nav_1"><a class="nav_but" href="ayouleyang.html">阿优乐扬</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="ayouleyang.html">自我简介<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="yiwulaodong.html">义务劳动<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="lianxifangshi.html">联系方式<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+           </div> 
+        </li>
+        <li class="nav_1"><a class="nav_but" href="daxueshenghuo.html">大学生活</a>
+           <div class="nav_slide">
+             <div class="nav_slide1">
+               <a href="daxueshenghuo.html">我的大学<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="xinxi.html">信息学院<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="jinrong.html">金融学院<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="daxuefengguang.html">大学风光<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="daxueyundong.html">大学运动<span><img src="images/siade_bg1.png"/></span></a>
+             </div>
+           </div> 
+        </li>
+        <li class="nav_1"><a class="nav_but" href="zuixinyaowen.html">最新要闻</a>
+          <div class="nav_slide">
+           <div class="nav_slide1">
+               <a href="zuixinyaowen.html">学校新闻<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="hangyexinwen.html">行业新闻<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+          </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="wodefengcai.html">我的风采</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="wodefengcai.html">学术指导<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="pythonjiaoxue.html">Python教学<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+         </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="ketangzuoye.html">课程作业</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="ketangzuoye.html">网页设计<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="xinxiguanli.html">信息管理<span><img src="images/siade_bg1.png"/></span></a>                    
+            </div>
+         </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="https://blog.csdn.net/ayouleyang" target="news">我的博客</a></li>
+        <li class="nav_1"><a class="nav_but" href="liuyanban.html">留言板</a></li>
+    </ul>
+</div>
+        <script>	 
+             $(".nav_1").mouseenter(function(){
+				 $(this).find(".nav_slide").slideDown()
+			  });
+			  
+			  $(".nav_1").mouseleave(function(){ 
+				 $(".nav_slide").slideUp()
+			 });
+          </script>
+</div>
+<!--banner部分开始-->
+  <div class="banner_box1">
+        <ul class="banner_pic1">
+            <li><img src="images/banners1.jpg" /></li>
+            <li><img src="images/banners2.jpg" /></li>
+            <li><img src="images/banners3.jpg" /></li>
+    
+        </ul>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+        <div class="num"><ul></ul></div>
+  </div>
+	<script>
+    /*鼠标移过，左右按钮显示*/
+    $(".banner_box1").hover(function(){
+        $(this).find(".prev,.next").fadeTo("show",0.1);
+    },function(){
+        $(this).find(".prev,.next").hide();
+    })
+    /*鼠标移过某个按钮 高亮显示*/
+    $(".prev,.next").hover(function(){
+        $(this).fadeTo("show",0.7);
+    },function(){
+        $(this).fadeTo("show",0.1);
+    })
+    $(".banner_box1").slide({ titCell:".num ul" , mainCell:".banner_pic1" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+    </script>
+    <!-- 代码 结束 -->
+  <!--banner部分结束-->
+
+<!--内容开始-->
+<div class="content_box1">
+  <div class="content_box2"> 
+    <div class="menu_box">
+       <p class="menu_box_title">阿优乐扬<span>ayouleyang</span></p>
+       <ul class="menu_box1">
+          <li><a href="ayouleyang.html">自我简介</a></li>
+          <li><a href="yiwulaodong.html">义务劳动</a></li>
+          <li><a href="lianxifangshi.html">联系方式</a></li>
+       </ul>
+    </div>
+    <div class="content_boxL">
+       <div class="content_boxL_nav">
+         <p class="content_boxL_nav_title">阿优乐扬义务劳动管理系统</p>
+         <div class="content_boxL_nav_R"><a href="index.html">首页 ></a> <a href="ayouleyang.html">阿优乐扬 ></a><a href=""> 义务劳动</a></div>                          
+       </div>
+       <div class="content_boxL_text">
+         <p>阿优乐扬义务劳动管理系统是贵州财经大学信息学院资助小组自主开发的义务劳动管理平台，用于义务劳动的发布，登记记录。让同学们告别带义务劳动记录簿干活，不用担心找不到义务劳动做,实现信息化的管理模式</p>
+         <p class="zone">系统用途：<br></p>
+         <p>一、该系统以信息化技术结合，紧跟时代步伐，致力于改变传统的管理方式，成为高效的信息化管理系统。</p>
+         <p>二、该系统拥有PC端和移动端网页，可以随时随地发布或接收义务劳动，不需要携带（义务劳动登记薄）去做义务劳动，提高办事效率。</p>
+         <p>三、该系统让义务劳动的管理更精准，更明确。负责人发布的义务劳动链接中会含有类型时间地点次数人数及负责人，还可以备注相关的信息，发布以后几乎不需要花时间去给学生解惑。当学生报名义务劳动以后系统自动记下学生报名的信息，达到报名即做，做完即走。当报名的学生没有到场时，可以把该学生报名的信息删除，其它学生继续报名，或者减少该学生的义务劳动次数以做警戒。</p>
+         <p>四、学生可以24小时登录系统查看自己义务劳动的信息，申请资助时可以直接从系统里面导出自己的义务劳动次数，更方便资助小组查看审核，高级管理员也可以直接通过系统查看学生的义务劳动。</p>
+         <p>五、该系统对各年级，各班义务劳动情况做实时统计，可了解各班义务劳动情况以及义务劳动排名。</p>
+         <p>六、该系统对管理员的权限做了分类，不同的管理员拥有的权限不同，在充分利用平台的功能时也可以让平台的管理更安全便捷。</p>
+         <p>七、该系统还有人人都可以使用的信息收集功能，信息收集者可以编译相关的内容发布需要收集的人，让信息的收集更简便准确，也只有发布者才有权限阅读自己收集的信息，保证信息的安全，也让办公更方便高效。</p>
+         <p>八、该系统还可以收集学生一些学习的资料，把它展示在首页上让大家一起学习，也会推荐很多对学习有帮助的友情链接，和一些生活之中的服务信息。  </p>
+         <p class="zone">系统主页:<br></p>
+         <img class="content_boxL_pic" src="images/xylwxt1.png" height="420px"/>
+         <p class="zone">管理员主页:<br></p>
+         <img class="content_boxL_pic" src="images/xylwxt2.png" height="420px"/>
+         <p class="zone">学生主页:<br></p>
+         <img class="content_boxL_pic" src="images/xylwxt3.png" height="420px"/>
+         
+       </div>
+    </div>
+   <div class="clear"></div>
+   </div>
+   <div class="footer_box"><P>贵州财经大学 · 信息学院 · 2017级信息管理与信息系统班</p></div>
+</div>
+<!--内容结束--> 
+
+</div>
+</body>
+</html>

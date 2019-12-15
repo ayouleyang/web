@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="./images/favicon.ico" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
+<title>杨友-个人网页-阿优乐扬</title>
+</head>
+<body>
+<div class="wapper_box">
+<div class="header_box"></div>
+<div class="header_box1">
+  <div class="header_box2">
+    <a class="logo_box" href="index.html"><img src="images/logo.png"/></a>
+    <ul class="nav_box">
+        <li class="nav_1"><a class="nav_but" href="index.html">网站首页</a></li>
+        <li class="nav_1"><a class="nav_but" href="ayouleyang.html">阿优乐扬</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="ayouleyang.html">自我简介<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="yiwulaodong.html">义务劳动<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="lianxifangshi.html">联系方式<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+           </div> 
+        </li>
+        <li class="nav_1"><a class="nav_but" href="daxueshenghuo.html">大学生活</a>
+           <div class="nav_slide">
+             <div class="nav_slide1">
+               <a href="daxueshenghuo.html">我的大学<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="xinxi.html">信息学院<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="jinrong.html">金融学院<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="daxuefengguang.html">大学风光<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="daxueyundong.html">大学运动<span><img src="images/siade_bg1.png"/></span></a>
+             </div>
+           </div> 
+        </li>
+        <li class="nav_1"><a class="nav_but" href="zuixinyaowen.html">最新要闻</a>
+          <div class="nav_slide">
+           <div class="nav_slide1">
+               <a href="zuixinyaowen.html">学校新闻<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="hangyexinwen.html">行业新闻<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+          </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="wodefengcai.html">我的风采</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="wodefengcai.html">学术指导<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="pythonjiaoxue.html">Python教学<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+         </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="ketangzuoye.html">课程作业</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="ketangzuoye.html">网页设计<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="xinxiguanli.html">信息管理<span><img src="images/siade_bg1.png"/></span></a>                    
+            </div>
+         </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="https://blog.csdn.net/ayouleyang" target="news">我的博客</a></li>
+        <li class="nav_1"><a class="nav_but" href="liuyanban.html">留言板</a></li>
+    </ul>
+</div>
+        <script>	 
+             $(".nav_1").mouseenter(function(){
+				 $(this).find(".nav_slide").slideDown()
+			  });
+			  
+			  $(".nav_1").mouseleave(function(){ 
+				 $(".nav_slide").slideUp()
+			 });
+        </script>
+</div>
+<!--banner部分开始-->
+  <div class="banner_box1">
+        <ul class="banner_pic1">
+            <li><img src="images/banners1.jpg" /></li>
+            <li><img src="images/banners2.jpg" /></li>
+            <li><img src="images/banners3.jpg" /></li>
+    
+        </ul>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+        <div class="num"><ul></ul></div>
+  </div>
+	<script>
+    /*鼠标移过，左右按钮显示*/
+    $(".banner_box1").hover(function(){
+        $(this).find(".prev,.next").fadeTo("show",0.1);
+    },function(){
+        $(this).find(".prev,.next").hide();
+    })
+    /*鼠标移过某个按钮 高亮显示*/
+    $(".prev,.next").hover(function(){
+        $(this).fadeTo("show",0.7);
+    },function(){
+        $(this).fadeTo("show",0.1);
+    })
+    $(".banner_box1").slide({ titCell:".num ul" , mainCell:".banner_pic1" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+    </script>
+    <!-- 代码 结束 -->
+  <!--banner部分结束-->
+
+<!--内容开始-->
+<div class="content_box1">
+  <div class="content_box2"> 
+    <div class="menu_box">
+       <p class="menu_box_title">阿优乐扬<span>ayouleyang</span></p>
+       <ul class="menu_box1">
+          <li><a href="ayouleyang.html">自我简介</a></li>
+          <li><a href="yiwulaodong.html">义务劳动</a></li>
+          <li><a href="lianxifangshi.html">联系方式</a></li>
+          
+       </ul>
+    </div>
+    <div class="content_boxL">
+       <div class="content_boxL_nav">
+         <p class="content_boxL_nav_title">自我简介</p>
+         <div class="content_boxL_nav_R"><a href="">首页 ></a> <a href="">阿优乐扬 ></a><a href=""> 自我简介</a></div>                          
+       </div>
+       <div class="content_boxL_text">
+         <p class="zone">阿优乐扬是一种追求，一种标准，一种态度，一种精神；阿以至优，乐享于扬!</p>
+         <p class="zone">为什么叫阿优乐扬?<br></p>
+         <p>阿：字母的A,排名第一，有top之意;</p>
+         <p>优：这是对自己的标准，凡是做人做事，都要以最好的标准来看待；</p>
+         <p>乐：是一种乐观开朗的精神，无论做什么，都只有乐在其中，才能够享受，做到尽善尽美；</p>
+         <p>扬：这是一种分享情怀，把自己的事做好做远！</p>
+         <p>姓名：杨友，取“扬”之意，英文名：Youle,优乐；组合阿优乐扬！</p>
+         <p class="zone">手机外壳:<br></p>
+         <img class="content_boxL_pic" src="images/shoujike.jpg" height="200px"/>
+         
+       </div>
+    </div>
+   <div class="clear"></div>
+   </div>
+   <div class="footer_box"><P>贵州财经大学 · 信息学院 · 2017级信息管理与信息系统班</p></div>
+</div>
+<!--内容结束--> 
+
+</div>
+</body>
+</html>

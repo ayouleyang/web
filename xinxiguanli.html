@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="./images/favicon.ico" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
+<title>杨友-个人网页-课程作业</title>
+</head>
+<body>
+<div class="wapper_box">
+<div class="header_box"></div>
+<div class="header_box1">
+   <div class="header_box2">
+      <a class="logo_box" href="index.html"><img src="images/logo.png"/></a>
+      <ul class="nav_box">
+          <li class="nav_1"><a class="nav_but" href="index.html">网站首页</a></li>
+          <li class="nav_1"><a class="nav_but" href="ayouleyang.html">阿优乐扬</a>
+            <div class="nav_slide">
+              <div class="nav_slide1">
+                 <a href="ayouleyang.html">自我简介<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="yiwulaodong.html">义务劳动<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="lianxifangshi.html">联系方式<span><img src="images/siade_bg1.png"/></span></a>
+              </div>
+             </div> 
+          </li>
+          <li class="nav_1"><a class="nav_but" href="daxueshenghuo.html">大学生活</a>
+             <div class="nav_slide">
+               <div class="nav_slide1">
+                 <a href="daxueshenghuo.html">我的大学<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="xinxi.html">信息学院<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="jinrong.html">金融学院<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="daxuefengguang.html">大学风光<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="daxueyundong.html">大学运动<span><img src="images/siade_bg1.png"/></span></a>
+               </div>
+             </div> 
+          </li>
+          <li class="nav_1"><a class="nav_but" href="zuixinyaowen.html">最新要闻</a>
+            <div class="nav_slide">
+             <div class="nav_slide1">
+                 <a href="zuixinyaowen.html">学校新闻<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="hangyexinwen.html">行业新闻<span><img src="images/siade_bg1.png"/></span></a>
+              </div>
+            </div>  
+          </li>
+          <li class="nav_1"><a class="nav_but" href="wodefengcai.html">我的风采</a>
+            <div class="nav_slide">
+              <div class="nav_slide1">
+                 <a href="wodefengcai.html">学术指导<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="pythonjiaoxue.html">Python教学<span><img src="images/siade_bg1.png"/></span></a>
+              </div>
+           </div>  
+          </li>
+          <li class="nav_1"><a class="nav_but" href="ketangzuoye.html">课程作业</a>
+            <div class="nav_slide">
+              <div class="nav_slide1">
+                 <a href="ketangzuoye.html">网页设计<span><img src="images/siade_bg1.png"/></span></a>
+                 <a href="xinxiguanli.html">信息管理<span><img src="images/siade_bg1.png"/></span></a>                    
+              </div>
+           </div>  
+          </li>
+          <li class="nav_1"><a class="nav_but" href="https://blog.csdn.net/ayouleyang" target="news">我的博客</a></li>
+          <li class="nav_1"><a class="nav_but" href="liuyanban.html">留言板</a></li>
+      </ul>
+ </div>
+        <script>	 
+             $(".nav_1").mouseenter(function(){
+				 $(this).find(".nav_slide").slideDown()
+			  });
+			  
+			  $(".nav_1").mouseleave(function(){ 
+				 $(".nav_slide").slideUp()
+			 });
+          </script>
+</div>
+<!--banner部分开始-->
+  <div class="banner_box1">
+        <ul class="banner_pic1">
+            <li><img src="images/banners1.jpg" /></li>
+            <li><img src="images/banners2.jpg" /></li>
+            <li><img src="images/banners3.jpg" /></li>
+    
+        </ul>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+        <div class="num"><ul></ul></div>
+  </div>
+	<script>
+    /*鼠标移过，左右按钮显示*/
+    $(".banner_box1").hover(function(){
+        $(this).find(".prev,.next").fadeTo("show",0.1);
+    },function(){
+        $(this).find(".prev,.next").hide();
+    })
+    /*鼠标移过某个按钮 高亮显示*/
+    $(".prev,.next").hover(function(){
+        $(this).fadeTo("show",0.7);
+    },function(){
+        $(this).fadeTo("show",0.1);
+    })
+    $(".banner_box1").slide({ titCell:".num ul" , mainCell:".banner_pic1" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+    </script>
+    <!-- 代码 结束 -->
+  <!--banner部分结束-->
+
+<!--内容开始-->
+<div class="content_box1">
+  <div class="content_box2"> 
+    <div class="menu_box">
+       <p class="menu_box_title">课程作业<span>Homework </span></p>
+       <ul class="menu_box1">
+          <li><a href="ketangzuoye.html">网页设计</a></li>
+          <li><a href="xinxiguanli.html">信息管理</a></li>
+       </ul>
+    </div>
+    <div class="content_boxL">
+       <div class="content_boxL_nav">
+         <p class="content_boxL_nav_title">信息管理</p>
+         <div class="content_boxL_nav_R"><a href="index.html">首页 ></a> <a href="ketangzuoye.html">课程作业 ></a><a href="xinxiguanli.html"> 信息管理</a></div>                          
+       </div>
+       <div class="content_boxL_text">
+         <ul class="cgal_list">
+             <li><img class="cgal_pic" src="images/tiddlywiki.png" height="238px" width="320px"/>
+                <div class="cgan_xqy">
+                    <p>你是否曾有过这样的感觉，你的脑袋不够大，不能容纳你需要记住的一切？
+                        欢迎来到TiddlyWiki，这是一款独特的非线性笔记本，用于捕获、组织和分享复杂信息。                        
+                        可用它来保存你的待办事项列表，计划一篇文章或小说，或安排你的婚礼。记录闪过你大脑的每一个想法，或者建立一个灵动的自适应式的网站。与传统的在线服务不同，TiddlyWiki让您可以选择在哪里保存你的数据，保证在未来几十年，您仍然可以使用今天所做的。</p>
+                    <a href="https://tiddlywiki.com/" target="news">点击详情>></a>
+                </div>
+             </li>
+             <div class="underline"></div>
+             <li><img class="cgal_pic" src="images/wikiwork.png" height="238px" width="320px"/>
+                <div class="cgan_xqy">
+                    <p>Tiddlywiki 是一个非线形的个人笔记工具，所有的内容都保存在一个 HTML 文件内。单文件既能够直接保存在本地，又可以方便地上传服务器。信息管理学老师要求我们班全部的作业都要在其中完成，并且上传到github保存，大家都可以互相学习，我负责全班的汇总工作。我们通过它来分享我们学习的知识，同时也有很好的储存管理方法，通过学习，了解如何使用tiddlywiki这个工具，对文字，图片，音频，视频等信息进行有效的管理。</p>
+                    <a href="https://inforabbi.github.io/showroom.html#2017信息管理与信息系统" target="news">点击详情>></a>
+                </div>
+             </li>
+             <div class="underline"></div>
+             <li><img class="cgal_pic" src="images/tiddlymap.png" height="238px" width="320px"/>
+                <div class="cgan_xqy">
+                    <p>TiddlyMap 严格来说不是一个纯正的思维导图工具，但具备脑图的功能。它基于 TiddlyWiki 构建，允许直观地链接和创建 wiki 主题，可以将个人笔记以维基概念图混合版本的形式转化为软件。</p>
+                    <a href="http://tiddlymap.org/" translate="news">点击详情>></a>
+                </div>
+             </li>
+             <div class="underline"></div>
+             <li><img class="cgal_pic" src="images/tupu.png" height="238px" width="320px"/>
+                <div class="cgan_xqy">
+                    <p>知识图谱之tiddlymap,使用tiddlymap来对家乡的美食做一个简单的管理，找出它们的联系，我的家乡是黔西南布依族苗族自治州，其中最为出名的当属贞丰糯米饭和粽子。我根据它们的制作方式，对当地美食做简单的分类。</p>
+                    <a href="https://ayouleyang.github.io/yangyou/" translate="news">点击详情>></a>
+                </div>
+             </li>
+         </ul>       
+       </div>
+       <div class="fenye_box"><a href="index.html">首页</a><a href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="">……</a><a>下一页</a><a href="">最后一页</a></div>
+    </div>
+   <div class="clear"></div>
+   </div>
+   <div class="footer_box"><P>贵州财经大学 · 信息学院 · 2017级信息管理与信息系统班</p></div>
+</div>
+</div>
+</body>
+
+</html>

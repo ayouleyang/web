@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    min-width: 990px;
+}
+
+#sum_box {
+    margin: 0 auto;
+    text-align: left;
+    width: 990px;
+}
+
+#header {
+    background-color: #99cc00;
+    width: 852px;
+}
+
+#header h1 {
+    text-indent: -9999px;
+    width: 691px;
+    height: 104px;
+    background: #fff url(images/logo.jpg) no-repeat 64px 0;
+    margin: 0 0 0 161px;
+}
+
+#container {
+    background-color: #99cc00;
+    width: 852px;
+}
+
+#container #content {
+    width: 690px;
+    background-color: white;
+    float: left;
+    border-right: #daeda3 1px solid;
+}
+
+#container #nav {
+    float: left;
+    width: 152px;
+    height: 166px;
+    background-color: #00801b;
+    padding: 15px 0 0 9px;
+}
+
+#nav a {
+    display: block;
+    width: 113px;
+    height: 18px;
+    background: url(images/dh.jpg) no-repeat;
+    padding: 5px 0 0 30px;
+    color: white;
+    text-decoration: none;
+    font: 12px/1.1 "黑体";
+}
+
+#nav a:hover {
+    color: #00801b;
+    background-position: 0 -23px;
+}
+
+#container #clear {
+    clear: both;
+}
+
+#intro #title {
+    width: 90%;
+    margin: 16px 0 0 5%;
+    background: url(images/head.jpg) repeat-x;
+}
+
+#intro #title h2 {
+    text-indent: -9999px;
+    background: url(images/gsjs.jpg) no-repeat;
+    height: 41px;
+    margin: 0;
+}
+
+#content #intro #intr {
+    width: 90%;
+    margin: 21px 0 0 5%;
+    font-size: 9pt;
+    line-height: 19pt;
+    color: #999999;
+}
+
+#intro #intr {
+    text-indent: 2em;
+}
+
+#intro #intr img {
+    float: right;
+    width: 300px;
+    height: 200px;
+}
+
+#content #copyright {
+    font-size: 9pt;
+    color: #999999;
+    text-align: center;
+    width: 90%;
+    margin: 8px 0 0 5%;
+    padding: 8px;
+    border-top: 1px solid #ccc;
+}

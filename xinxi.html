@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="./images/favicon.ico" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
+<title>杨友-个人网页-大学生活</title>
+</head>
+
+<body>
+<div class="wapper_box">
+<div class="header_box"></div>
+<div class="header_box1">
+  <div class="header_box2">
+    <a class="logo_box" href="index.html"><img src="images/logo.png"/></a>
+    <ul class="nav_box">
+        <li class="nav_1"><a class="nav_but" href="index.html">网站首页</a></li>
+        <li class="nav_1"><a class="nav_but" href="ayouleyang.html">阿优乐扬</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="ayouleyang.html">自我简介<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="yiwulaodong.html">义务劳动<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="lianxifangshi.html">联系方式<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+           </div> 
+        </li>
+        <li class="nav_1"><a class="nav_but" href="daxueshenghuo.html">大学生活</a>
+           <div class="nav_slide">
+             <div class="nav_slide1">
+               <a href="daxueshenghuo.html">我的大学<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="xinxi.html">信息学院<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="jinrong.html">金融学院<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="daxuefengguang.html">大学风光<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="daxueyundong.html">大学运动<span><img src="images/siade_bg1.png"/></span></a>
+             </div>
+           </div> 
+        </li>
+        <li class="nav_1"><a class="nav_but" href="zuixinyaowen.html">最新要闻</a>
+          <div class="nav_slide">
+           <div class="nav_slide1">
+               <a href="zuixinyaowen.html">学校新闻<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="hangyexinwen.html">行业新闻<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+          </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="wodefengcai.html">我的风采</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="wodefengcai.html">学术指导<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="pythonjiaoxue.html">Python教学<span><img src="images/siade_bg1.png"/></span></a>
+            </div>
+         </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="ketangzuoye.html">课程作业</a>
+          <div class="nav_slide">
+            <div class="nav_slide1">
+               <a href="ketangzuoye.html">网页设计<span><img src="images/siade_bg1.png"/></span></a>
+               <a href="xinxiguanli.html">信息管理<span><img src="images/siade_bg1.png"/></span></a>                    
+            </div>
+         </div>  
+        </li>
+        <li class="nav_1"><a class="nav_but" href="https://blog.csdn.net/ayouleyang" target="news">我的博客</a></li>
+        <li class="nav_1"><a class="nav_but" href="liuyanban.html">留言板</a></li>
+    </ul>
+</div>
+        <script>	 
+             $(".nav_1").mouseenter(function(){
+				 $(this).find(".nav_slide").slideDown()
+			  });
+			  
+			  $(".nav_1").mouseleave(function(){ 
+				 $(".nav_slide").slideUp()
+			 });
+			 //$(".producys_box").mouseout(function(){
+				// $(this).find(".producys_box1").slideUp(); 
+			 //});
+          </script>
+</div>
+<!--banner部分开始-->
+  <div class="banner_box1">
+        <ul class="banner_pic1">
+            <li><img src="images/banners1.jpg" /></li>
+            <li><img src="images/banners2.jpg" /></li>
+            <li><img src="images/banners3.jpg" /></li>
+    
+        </ul>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+        <div class="num"><ul></ul></div>
+  </div>
+	<script>
+    /*鼠标移过，左右按钮显示*/
+    $(".banner_box1").hover(function(){
+        $(this).find(".prev,.next").fadeTo("show",0.1);
+    },function(){
+        $(this).find(".prev,.next").hide();
+    })
+    /*鼠标移过某个按钮 高亮显示*/
+    $(".prev,.next").hover(function(){
+        $(this).fadeTo("show",0.7);
+    },function(){
+        $(this).fadeTo("show",0.1);
+    })
+    $(".banner_box1").slide({ titCell:".num ul" , mainCell:".banner_pic1" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+    </script>
+
+<div class="content_box1">
+  <div class="content_box2"> 
+    <div class="menu_box">
+       <p class="menu_box_title">大学生活<span>University Life</span></p>
+       <ul class="menu_box1">
+          <li><a href="daxueshenghuo.html">我的大学</a></li>
+          <li><a href="xinxi.html">信息学院</a></li>
+          <li><a href="jinrong.html">金融学院</a></li>
+          <li><a href="daxuefengguang.html">大学风光</a></li>
+          <li><a href="daxueyundong.html">大学运动</a></li>
+       </ul>
+    </div>
+    <div class="content_boxL">
+       <div class="content_boxL_nav">
+         <p class="content_boxL_nav_title">信息学院</p>
+         <div class="content_boxL_nav_R"><a href="">首页 ></a> <a href="daxueshenghuo.html">大学生活 ></a><a href="xinxi.html"> 信息学院</a></div>                          
+       </div>
+       <div class="content_boxL_text">
+         <p class="yewu_p"><span class="yewu_title">学院介绍：</span><br>
+            信息学院是贵州财经大学成立最早的学院之一，学院办学历史悠久，最早始于1985年开办的经济信息管理专业。经过长年发展，学院已经成为贵州财经大学规模较大、学科门类最为齐全的教学单位。2002年4月在原信息管理系、计算机管理系和统计系统计专业的基础上成立的，是学校成立较早的学院之一。2015年6月经过专业调整，学院形成了以工学、理学、管理学等多学科协调发展的教学单位，也是学校规模较大、学科门类最齐全的学院之一。</p>
+         <p class="yewu_p"><span class="yewu_title">办学能力：</span><br>
+            信息学院成立于2002年，是贵州财经学院唯一的一个包含理工科专业的分院，也是全校规模最大、学科门类最齐全的分院。学院历年来已经为社会输送了2000多名人才，为社会主义现代化建设做出了巨大的贡献。目前我院有5个本科专业：计算机科学与技术、信息管理与信息系统、电子商务、软件工程、网络工程，在校本科学生近900人，还有一个计算机应用技术硕士点、一个校级重点学科1个。此外我分院还承担全院各专业的计算机基础课和计算机应用课，以及管理类专业基础课管理信息系统的教学任务。</p>
+        <p class="yewu_p"><span class="yewu_title">学院特色：</span><br>
+            信息学院自成立以来，教学、科研科研成果突出、学科建设成绩斐然。信息管理与信息系统专业被评为省级示范性专业，《管理信息系统》和《电子商务概论》课被评为省级精品课程，另外，还取得了一系列的教学科研成果。对外交流与合作日益增强，特别是与四川大学软件学院的合作对于我分院的专业建设、学科建设及师资队伍建设起到了积极地促进作用。</p>
+         <p class="yewu_p"><span class="yewu_title">师资力量：</span><br>
+                    我们通过对目标资产进行严格的尽职调查和审慎的资产评估，施行定向收购计划，对金融机构（银行等）不良资产、中小企业因经营不善等原因造成的不良资产（固定资产、流动资产、无形资产）等资产进行收购。</p>
+         <p class="yewu_p"><span class="yewu_title">资产收购业务：</span><br>
+            信息学院拥有一支作风优良、素质过硬、年龄职称结构合理的师资队伍，现有教职工57人，其中专任教师45人，其中教授6人、副教授20人，高级职称教师人数占全院教师的44%。教职工中具有硕士以上学位的超过80%，其中博士7人，在读博士2人。</p>
+         <p class="yewu_p"><span class="yewu_title">教学条件：</span><br>
+            目前，学院教学科研设施齐全，已建成计算机网络技术专业实验室、网络技术实验室各1个、校级研究中心1个、研究室2个，拥有价值680万元的各类先进教学设备，院资料室有近10000册藏书，为培养高素质的人才生提供了较好的硬件条件和良好的教学科研环境。</p>           
+       </div>
+    </div>
+   <div class="clear"></div>
+   </div>
+   <div class="footer_box"><P>贵州财经大学 · 信息学院 · 2017级信息管理与信息系统班</p></div>
+</div>
+<!--内容结束--> 
+
+
+</div>
+</body>
+
+</html>
