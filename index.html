@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="./images/favicon.ico" />
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js"></script>
+<script src="js/jquery.superslide.2.1.1.js" type="text/javascript"></script>
+<title>杨友-个人网页-首页</title>
+</head>
+
+<body>
+<div class="wapper_box">
+<div class="header_box"></div>
+<div class="header_box1">
+    <div class="header_box2">
+         <a class="logo_box" href="index.html"><img src="images/logo.png"/></a>
+         <ul class="nav_box">
+             <li class="nav_1"><a class="nav_but" href="index.html">网站首页</a></li>
+             <li class="nav_1"><a class="nav_but" href="ayouleyang.html">阿优乐扬</a>
+               <div class="nav_slide">
+                 <div class="nav_slide1">
+                    <a href="ayouleyang.html">自我简介<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="yiwulaodong.html">义务劳动<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="lianxifangshi.html">联系方式<span><img src="images/siade_bg1.png"/></span></a>
+                 </div>
+                </div> 
+             </li>
+             <li class="nav_1"><a class="nav_but" href="daxueshenghuo.html">大学生活</a>
+                <div class="nav_slide">
+                  <div class="nav_slide1">
+                    <a href="daxueshenghuo.html">我的大学<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="xinxi.html">信息学院<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="jinrong.html">金融学院<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="daxuefengguang.html">大学风光<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="daxueyundong.html">大学运动<span><img src="images/siade_bg1.png"/></span></a>
+                  </div>
+                </div> 
+             </li>
+             <li class="nav_1"><a class="nav_but" href="zuixinyaowen.html">最新要闻</a>
+               <div class="nav_slide">
+                <div class="nav_slide1">
+                    <a href="zuixinyaowen.html">学校新闻<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="hangyexinwen.html">行业新闻<span><img src="images/siade_bg1.png"/></span></a>
+                 </div>
+               </div>  
+             </li>
+             <li class="nav_1"><a class="nav_but" href="wodefengcai.html">我的风采</a>
+               <div class="nav_slide">
+                 <div class="nav_slide1">
+                    <a href="wodefengcai.html">学术指导<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="pythonjiaoxue.html">Python教学<span><img src="images/siade_bg1.png"/></span></a>
+                 </div>
+              </div>  
+             </li>
+             <li class="nav_1"><a class="nav_but" href="ketangzuoye.html">课程作业</a>
+               <div class="nav_slide">
+                 <div class="nav_slide1">
+                    <a href="ketangzuoye.html">网页设计<span><img src="images/siade_bg1.png"/></span></a>
+                    <a href="xinxiguanli.html">信息管理<span><img src="images/siade_bg1.png"/></span></a>                    
+                 </div>
+              </div>  
+             </li>
+             <li class="nav_1"><a class="nav_but" href="https://blog.csdn.net/ayouleyang" target="news">我的博客</a></li>
+             <li class="nav_1"><a class="nav_but" href="liuyanban.html">留言板</a></li>
+         </ul>
+    </div>
+        <script>	 
+             $(".nav_1").mouseenter(function(){
+				 $(this).find(".nav_slide").slideDown()
+			  });
+			  
+			  $(".nav_1").mouseleave(function(){ 
+				 $(".nav_slide").slideUp()
+			 });
+			 //$(".producys_box").mouseout(function(){
+				// $(this).find(".producys_box1").slideUp(); 
+			 //});
+          </script>
+</div>
+<!--banner部分开始-->
+  <div class="banner_box">
+        <ul class="banner_pic">
+            <li><img src="images/banners1.jpg" /></li>
+            <li><img src="images/banners2.jpg" /></li>
+            <li><img src="images/banners3.jpg" /></li>
+    
+        </ul>
+        <a class="prev" href="javascript:void(0)"></a>
+        <a class="next" href="javascript:void(0)"></a>
+        <div class="num"><ul></ul></div>
+  </div>
+	<script>
+    /*鼠标移过，左右按钮显示*/
+    $(".banner_box").hover(function(){
+        $(this).find(".prev,.next").fadeTo("show",0.1);
+    },function(){
+        $(this).find(".prev,.next").hide();
+    })
+    /*鼠标移过某个按钮 高亮显示*/
+    $(".prev,.next").hover(function(){
+        $(this).fadeTo("show",0.7);
+    },function(){
+        $(this).fadeTo("show",0.1);
+    })
+    $(".banner_box").slide({ titCell:".num ul" , mainCell:".banner_pic" , effect:"fold", autoPlay:true, delayTime:700 , autoPage:true });
+    </script>
+    <!-- 代码 结束 -->
+  <!--banner部分结束-->
+
+<!--内容开始-->
+<div class="content_box">
+   <ul class="content_box_top">
+      <li>
+          <a href=""><img src="images/icon1.png"/></a>
+          <h3 class="obj_title">计算机类专业</h3>
+          <p>2017年9月进入贵州财经大学<br />信息学院</p>
+        </li>
+      <li>
+        <a href="https://www.ayouleyang.cn/" target="news"><img src="images/icon2.png"/></a>
+        <h3 class="obj_title">系统管理</h3>
+        <p>2018年6月担任信息学院义务劳动管理系统管理员<br />网页维护</p>
+      </li>
+      <li>
+        <a href=""><img src="images/icon3.png"/></a>
+        <h3 class="obj_title">主修专业</h3>
+        <p>2019年6月主修信息管理与信息系统<br />担任班长</p>
+      </li>
+      <li>
+        <a href=""><img src="images/icon4.png"/></a>
+        <h3 class="obj_title">辅修专业</h3>
+        <p>2019年6月辅修金融学专业<br />金融学院</p>
+      </li>
+      <li>
+        <a href="https://blog.csdn.net/ayouleyang" target="news"><img src="images/icon5.png"/></a>
+        <h3 class="obj_title">网络爬虫</h3>
+        <p>深入学习数据挖掘与数据分析<br />计算机编程</p>
+      </li> 
+   </ul>
+   <div class="content_box_bot">
+       <ul class="content_box_bot_l">
+          <li class="info_news">
+            <div class="info_news_but"><p class="on">最新博客</p><p>我的关注</p></div>
+            <ul class="info_news_text info_news_text1">
+              <li><a href="https://blog.csdn.net/ayouleyang/article/details/102746267" target="news"><img src="images/info_icon1.png"/><p>python 批量读取文件夹中的多个TXT文件<span class="date">2019-10-25</span></p></a></li>
+              <li><a href="https://blog.csdn.net/ayouleyang/article/details/102659284" target="news"><img src="images/info_icon1.png"/><p>携程旅游网与马蜂窝游客记录爬取<span class="date">2019-10-21</span></p></a></li>
+              <li><a href="https://blog.csdn.net/ayouleyang/article/details/102539308" target="news"><img src="images/info_icon1.png"/><p>爬取携程攻略社区所有笔记保存到txt文件<span class="date">2019-10-13</span></p></a></li>
+              <li><a href="https://blog.csdn.net/ayouleyang/article/details/102485862" target="news"><img src="images/info_icon1.png"/><p>python requests爬取拉勾网职位信息<span class="date">2019-10-10</span></p></a></li>
+            </ul>
+            <ul class="info_news_text info_news_text2">
+              <li><a href="https://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/103497095" target="news"><img src="images/info_icon1.png"/><p>LatentFusion：华盛顿大学与英伟达联合提出6D姿态估计新方法<span class="date">2019-12-11</span></p></a></li>
+              <li><a href="http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/3936937/index.html" target="news"><img src="images/info_icon1.png"/><p>陈雨露副行长出席普惠金融、绿色金融改革试验区启动交流活动<span class="date">2019-12-11</span></p></a></li>
+              <li><a href="http://www.cnit5.com/a/ITyejie/2019/1211/15228.html" target="news"><img src="images/info_icon1.png"/><p>又获奖了！网易大数据荣获2019最佳零售大数据解决方案<span class="date">2019-12-11</span></p></a></li>
+              <li><a href="http://www.itbear.com.cn/html/2019-12/365712.html" target="news"><img src="images/info_icon1.png"/><p>金融时报：GitHub计划在中国开设子公司<span class="date">2019-12-11</span></p></a></li>
+            </ul>
+          <script>
+            $(".info_news_but p").each(function(n){
+				$(this).click(function(){
+				$(this).addClass("on").siblings("p").removeClass("on");
+				$(".info_news_text").hide(400).eq(n).show(500);
+		    });
+           });
+          
+          </script>
+          </li>
+          <li class="search_obj">
+            <p class="search_obj_title">个人标签<span>Personal label</span></p>
+            <div class="search_obj1">
+               <a href="">青春</a>  <a href="">励志</a>  <a href="">技术大神</a>
+               <a href="">执着</a>  <a href="">激情</a>  <a href="">更多>></a>
+            </div>
+          </li>
+       </ul>
+       
+      <ul class="content_box_bot_r">
+          <li class="jianjie_box">
+            <p class="jianjie_title">信息管理与信息系统<span>MAJOR</span></p>
+            <div class="jianjie_box1">
+              <img src="images/xinguan.jfif"/>
+              <a href="">信息管理与信息系统专业培养适应国家经济建设、科技进步和社会发展的需要，德、智、体等方面全面发展，具有高尚健全的人格、一定的国际视野、强烈的民族...<span>[详情]</span></a></div>
+          </li>
+          <li class="zichan_box">
+            <P>金融学<span>Minor specialty</span></P>
+            <a href="">从经济学中分化出来的应用经济学科，是以融通货币和货币资金的经济活动为研究对象，具体研究个人、机构、政府如何获取、支出以及管理资金以及其他金融资产的学科，培养具备金融学方面的理论知识和业务技能，能在银行、证券、投资、保险及其他经济管理部门和企业从事相关工作的专门人才...<span>[详情]</span></a>
+          </li>
+       </ul>
+   </div>
+</div>
+<!--内容结束--> 
+<div class="footer_box"><P>贵州财经大学 · 信息学院 · 2017级信息管理与信息系统班</p></div>
+</div>
+</body>
+
+</html>
